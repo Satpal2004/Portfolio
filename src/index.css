@@ -567,7 +567,7 @@ h3 {
 }
 
 .cards-section {
-    height: 300vh;
+    /* height: 400vh; */
     position: relative;
 }
 
@@ -653,6 +653,25 @@ h3 {
     color: #fed7aa;
 }
 
+.get-code-btn {
+    display: inline-block;
+    margin-top: 10px;
+    margin-left: 200px;
+    border: 1px solid ghostwhite;
+    cursor: pointer;
+    padding: 8px 14px;
+    background: transparent;
+    color: #fff;
+    border-radius: 8px;
+    font-size: 14px;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.get-code-btn:hover {
+    color: black;
+    background: white;
+}
 
 .scroll-progress {
     position: fixed;
@@ -683,6 +702,186 @@ h3 {
     clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
 }
 /* ----------------------------- */
+
+
+/* Certificates and achievement */
+
+
+
+.cc-root {
+    padding: 4rem 0 3rem;
+    overflow: hidden;
+    /* justify-items: center; */
+    user-select: none;
+}
+
+.cc-eyebrow {
+    font-size: 0.72rem;
+    font-weight: 500;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: #888;
+    margin: 0 0 0.6rem 1rem;
+}
+
+.cc-title {
+    font-size: 1.5em;
+    font-weight: 500;
+    line-height: 1.1;
+    margin: 0 0 0.5rem 8em;
+}
+
+.cc-sub {
+    font-size: 0.9rem;
+    color: #777;
+    margin: 0 0 2rem 1rem;
+}
+
+/* ── Track ── */
+.cc-track-wrap {
+    margin-top: 10rem;
+    position: relative;
+    overflow: hidden;
+    cursor: grab;
+}
+
+.cc-track-wrap:active {
+    cursor: grabbing;
+}
+
+.cc-track-wrap::before,
+.cc-track-wrap::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 100px;
+    z-index: 2;
+    pointer-events: none;
+}
+
+.cc-track-wrap::before {
+    left: 0;
+    background: linear-gradient(to right, #000000, transparent);
+}
+
+.cc-track-wrap::after {
+    right: 0;
+    background: linear-gradient(to left, #000000, transparent);
+}
+
+.cc-track {
+    display: flex;
+    gap: 16px;
+    width: max-content;
+    padding: 1rem 1rem 1.4rem;
+    will-change: transform;
+}
+
+/* ── Card ── */
+.cc-card {
+    flex: 0 0 260px;
+    height: 170px;
+    border-radius: 16px;
+    border: 1px solid rgba(0, 0, 0, 0.08);
+    background: #fff;
+    padding: 18px 20px 16px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: relative;
+    overflow: hidden;
+    transition: border-color 0.2s, transform 0.2s;
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.05);
+}
+
+.cc-card:hover {
+    border-color: rgba(0, 0, 0, 0.18);
+    transform: translateY(-3px);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+}
+
+.cc-stripe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 3px;
+    border-radius: 16px 16px 0 0;
+}
+
+.cc-card-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-top: 6px;
+}
+
+.cc-badge {
+    font-size: 11px;
+    font-weight: 500;
+    letter-spacing: 0.04em;
+    padding: 3px 10px;
+    border-radius: 999px;
+}
+
+.cc-icon {
+    font-size: 20px;
+    line-height: 1;
+}
+
+.cc-card-body {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    gap: 3px;
+}
+
+.cc-name {
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 1.3;
+    color: #111;
+}
+
+.cc-issuer {
+    font-size: 12px;
+    color: #666;
+}
+
+.cc-year {
+    font-size: 11px;
+    color: #999;
+    margin-top: 6px;
+}
+
+
+.cc-pill {
+    font-size: 11px;
+    color: #888;
+    background: #f3f3f3;
+    border-radius: 999px;
+    padding: 4px 12px;
+    min-width: 56px;
+    text-align: center;
+}
+
+.cc-speed {
+    font-size: 12px;
+    color: #555;
+    border: 1px solid rgba(0, 0, 0, 0.12);
+    background: #fff;
+    border-radius: 8px;
+    padding: 6px 14px;
+    cursor: pointer;
+    transition: background 0.15s;
+}
+
+.cc-speed:hover {
+    background: #f5f5f5;
+}
+
 
 
 

@@ -4,6 +4,7 @@ import Skills from './Skills.jsx'
 import Projects from './ProjectsCards.jsx'
 import Edu from './EduTimeline.jsx'
 import Contact from './Contact.jsx'
+import Achievement from './Achievement.jsx'
 
 const Body = () => {
     const itemsData = [
@@ -36,6 +37,9 @@ const Body = () => {
 
             {/* <!-- PROJECTS --> */}
             <Projects />
+
+            {/* <!-- Achievement --> */}
+            {/* <Achievement/ > */}
 
             {/* <!-- EDUCATION --> */}
             <Edu itemsData={itemsData} />
