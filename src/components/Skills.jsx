@@ -90,7 +90,6 @@ const skillsCss = `
    Heading
    ────────────────────────────────────────── */
 .atom-skills-heading {
-  padding: 2px 120px;
   width: 100%;
   height: auto;
   text-transform: uppercase;
@@ -310,9 +309,6 @@ const skillsCss = `
    Responsive
    ────────────────────────────────────────── */
 @media (max-width: 768px) {
-  .atom-skills-heading {
-    font-size: 1.8rem;
-  }
 
   .skill-detail-card {
     padding: 10px 18px;
@@ -326,12 +322,6 @@ const skillsCss = `
 
   .skill-detail-icon {
     font-size: 22px;
-  }
-}
-
-@media (max-width: 480px) {
-  .atom-skills-heading {
-    font-size: 1.4rem;
   }
 }
 `
@@ -598,8 +588,8 @@ export default function AtomSkills() {
     <>
       <style>{skillsCss}</style>
       <section ref={panelRef} className="atom-skills-section flex justify-center items-center flex-col">
-        <div className="atom-skills-heading">
-          <span className="text-[#FAEBD7] uppercase lg:text-[3.2rem] md:text-[3rem] sm:text-[2.8rem] text-[2.4rem]">Skills</span><span className=' text-red-800 lg:text-[3.2rem] md:text-[3rem] sm:text-[2.8rem] text-[2.4rem]'> & Technologies</span>
+        <div className="atom-skills-heading lg:px-30 md:px-25 sm:px-22 px-15 lg:text-[3.1rem] md:text-[2.8rem] sm:text-[2.3rem] text-[1.7rem]">
+          <span className="text-[#FAEBD7] uppercase ">Skills</span><span className='text-red-800'> & Technologies</span>
         </div>
         <div className="atom-skills-container">
 

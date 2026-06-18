@@ -32,8 +32,8 @@ const NavBar = () => {
   return (
     <div className='w-full h-auto fixed top-5 translate-[-50%, 50%] z-50'>
       <style>{navstyle}</style>
-      <div className='navigationbar bg-white-200 bg-clip-padding backdrop-filter backdrop-blur-xl bg-opacity-10 border border-gray-100 xl:max-w-100 h-14 flex justify-center items-center rounded-4xl m-auto'>
-        <div className="flex items-center justify-between md:w-75 w-45 gap-2">
+      <div className='navigationbar bg-white-200 bg-clip-padding backdrop-filter backdrop-blur-xl bg-opacity-10 border border-gray-100 max-w-100 h-14 flex justify-center items-center rounded-4xl m-auto'>
+        <div className="flex items-center justify-between h-full gap-5">
           <img className='w-10 h-auto' src={logo} loading="lazy" alt="logo" />
           {/* <Herobuttons /> */}
           <Link className='nav-links text-red-700!' to='/'>home</Link>
