@@ -3,9 +3,11 @@ import { useState, useEffect } from 'react'
 
 const texts = [
     // "Hi there,",
+    "Data Analyst",
     "Frontend Developer",
     "UI Designer",
-    "Problem Solver"
+    "Problem Solver",
+
 ];
 
 const Typing = () => {
@@ -60,9 +62,9 @@ const Typing = () => {
 
 
     return (
-        <span className="underline">
+        <span className="text-red-700 ">
             {charDisplay}
-            <span className="animate-pulse">|</span>
+            <span className="animate-pulse">_</span>
         </span>
     );
 

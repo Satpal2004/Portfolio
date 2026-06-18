@@ -134,7 +134,7 @@ portfolio/
 ## 📬 Contact
 
 **Satpal Sharma**
-📧 [your.email@example.com](mailto:your.email@example.com)
+📧 [.com](mailto:your.email@example.com)
 🔗 https://github.com/your-username
 
 ---
