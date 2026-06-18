@@ -599,7 +599,7 @@ export default function AtomSkills() {
       <style>{skillsCss}</style>
       <section ref={panelRef} className="atom-skills-section flex justify-center items-center flex-col">
         <div className="atom-skills-heading">
-          <span className="text-[#FAEBD7] uppercase text-[3.2rem]">Skills</span><span className=' text-red-800 text-[3.2rem]'> & Technologies</span>
+          <span className="text-[#FAEBD7] uppercase lg:text-[3.2rem] md:text-[3rem] sm:text-[2.8rem] text-[2.4rem]">Skills</span><span className=' text-red-800 lg:text-[3.2rem] md:text-[3rem] sm:text-[2.8rem] text-[2.4rem]'> & Technologies</span>
         </div>
         <div className="atom-skills-container">
 

@@ -194,7 +194,6 @@ const ProjectsCards = () => {
                     <h4 ref={horizText1Ref} className="absolute z-20 uppercase md:text-[150px] text-[55px] md:left-50 md:top-40 left-15 top-40 text-red-800">Immersive</h4>
                     <img ref={horizImgRef} className="drop-shadow-orange-400 absolute z-21 w-6xl h-auto bottom-0" src="/media/robotExtend.png" alt="Robo-image" />
                     <h4 ref={horizText2Ref} className="absolute z-22 uppercase md:text-[150px] text-[55px] md:right-40 right-5 md:top-120 top-70 text-red-800">Experience</h4>
-                    <Analysis />
 
                 </div>
                 {/* <div className="scroll-progress">
