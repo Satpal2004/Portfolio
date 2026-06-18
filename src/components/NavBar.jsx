@@ -1,5 +1,5 @@
 import React from 'react'
-import { Link } from 'react-router-dom'
+import { Link, useLocation } from 'react-router-dom'
 import Skills from './Skills.jsx'
 import Contact from './Contact.jsx'
 import ProjectPage from './ProjectPage.jsx'
@@ -26,9 +26,14 @@ const navstyle = `.nav-links {
 
 .nav-links:hover::after {
   width: 100%;
+}
+
+.nav-links.active::after {
+  width: 100%;
 }`
 
 const NavBar = () => {
+  const location = useLocation()
   return (
     <div className='w-full h-auto fixed top-5 translate-[-50%, 50%] z-50'>
       <style>{navstyle}</style>
@@ -36,9 +41,9 @@ const NavBar = () => {
         <div className="flex items-center justify-between h-full gap-5">
           <img className='w-10 h-auto' src={logo} loading="lazy" alt="logo" />
           {/* <Herobuttons /> */}
-          <Link className='nav-links text-red-700!' to='/'>home</Link>
-          <Link className='nav-links text-red-700!' to='/ProjectPage'>Work</Link>
-          <Link className='nav-links text-red-700!' to='/Contact'>Contact</Link>
+          <Link className={`nav-links ${location.pathname === '/' ? 'active' : ''} text-red-700!`} to='/'>home</Link>
+          <Link className={`nav-links ${location.pathname === '/ProjectPage' ? 'active' : ''} text-red-700!`} to='/ProjectPage'>Work</Link>
+          <Link className={`nav-links ${location.pathname === '/Contact' ? 'active' : ''} text-red-700!`} to='/Contact'>Contact</Link>
         </div>
       </div>
     </div>
