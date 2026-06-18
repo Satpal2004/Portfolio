@@ -2,7 +2,6 @@ import { useLayoutEffect, useRef } from "react";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import ProjectsFolder from "./ProjectsFolder.jsx";
-import Analysis from "./Analysis.jsx";
 
 gsap.registerPlugin(ScrollTrigger);
 
