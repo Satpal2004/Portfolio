@@ -1,10 +1,10 @@
 // import React, { useRef, useEffect } from 'react';
 // import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
-import folder_fornt from '../../media/folder-icon-front.png'
-import folder_back from '../../media/folder-icon-back.png'
-import projects_folder from '../../media/inner-cards.png'
-import hover_icon from '../../media/hover_icon_32.png'
+import folder_fornt from '/images/folder-icon-front.png'
+import folder_back from '/images/folder-icon-back.png'
+import projects_folder from '/images/inner-cards.png'
+import hover_icon from '/images/hover_icon_32.png'
 import { BrowserRouter, Routes, Route, Link } from 'react-router-dom';
 import { useRef } from 'react';
 import gsap from 'gsap';

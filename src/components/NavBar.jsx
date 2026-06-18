@@ -3,7 +3,8 @@ import { Link } from 'react-router-dom'
 import Skills from './Skills.jsx'
 import Contact from './Contact.jsx'
 import ProjectPage from './ProjectPage.jsx'
-import { div, style } from 'motion/react-client'
+// import { div, style } from 'motion/react-client'
+import logo from '/images/navlogo.png'
 
 const navstyle = `.nav-links {
   position: relative;
@@ -33,7 +34,7 @@ const NavBar = () => {
       <style>{navstyle}</style>
       <div className='navigationbar bg-white-200 bg-clip-padding backdrop-filter backdrop-blur-xl bg-opacity-10 border border-gray-100 xl:max-w-100 h-14 flex justify-center items-center rounded-4xl m-auto'>
         <div className="flex items-center justify-between md:w-75 w-45 gap-2">
-          <img className='w-10 h-auto' src="/media/navlogo.png" loading="lazy" alt="logo" />
+          <img className='w-10 h-auto' src={logo} loading="lazy" alt="logo" />
           {/* <Herobuttons /> */}
           <Link className='nav-links text-red-700!' to='/'>home</Link>
           <Link className='nav-links text-red-700!' to='/ProjectPage'>Work</Link>

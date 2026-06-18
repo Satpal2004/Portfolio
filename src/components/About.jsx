@@ -9,6 +9,8 @@ import Typing from './Typing.jsx';
 import Herobuttons from './Herobuttons.jsx';
 // import ExpandingCircleButton from './ExpandingCircleButton.jsx';
 
+import roboImage from '/images/Gemini_Robo.png'
+
 const About = () => {
     const cardRef = useRef(null);
     const sectionRef = useRef(null);
@@ -95,7 +97,7 @@ const About = () => {
                     <Typing />
                 </div>
                 <div className='absolute bottom-0 right-5'>
-                    <img ref={roboRef} className='md:h-145  will-change-transform' src="/media/Gemini_Robo.png" alt="Robo-image" />
+                    <img ref={roboRef} className='md:h-145  will-change-transform' src={roboImage} alt="Robo-image" />
                 </div>
                 <div className="lg:translate-y-90 md:translate-y-60 translate-y-75 w-full text-center snap-start snap-mandatory">
 

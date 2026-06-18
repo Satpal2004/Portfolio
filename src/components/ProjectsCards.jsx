@@ -3,6 +3,8 @@ import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import ProjectsFolder from "./ProjectsFolder.jsx";
 
+import roboExtend from '/images/robotExtend.png'
+
 gsap.registerPlugin(ScrollTrigger);
 
 // const projectsData = [
@@ -191,7 +193,7 @@ const ProjectsCards = () => {
                 <div ref={panelRef} className="flex flex-col justify-center items-center md:h-[158vh] h-[50vh] w-full overflow-hidden relative">
 
                     <h4 ref={horizText1Ref} className="absolute z-20 uppercase md:text-[150px] text-[55px] md:left-50 md:top-40 left-15 top-40 text-red-800">Immersive</h4>
-                    <img ref={horizImgRef} className="drop-shadow-orange-400 absolute z-21 w-6xl h-auto bottom-0" src="/media/robotExtend.png" alt="Robo-image" />
+                    <img ref={horizImgRef} className="drop-shadow-orange-400 absolute z-21 w-6xl h-auto bottom-0" src={roboExtend} alt="Robo-image" />
                     <h4 ref={horizText2Ref} className="absolute z-22 uppercase md:text-[150px] text-[55px] md:right-40 right-5 md:top-120 top-70 text-red-800">Experience</h4>
 
                 </div>
